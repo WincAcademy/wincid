@@ -9,7 +9,7 @@ def main(args):
 
     new_id = uuid4().hex
 
-    if not args.no_save:
+    if not args.dry_run:
         iddb[new_id] = {'human_name': args.human_name}
         update_iddb(iddb)
 
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     ap = ArgumentParser('Generate Winc IDs')
     ap.add_argument('human_name', help='Human-friendly name for this UUID.\
                                         Does not need to be unique.')
-    ap.add_argument('-n', '--no-save', action='store_true',
+    ap.add_argument('-d', '--dry-run', action='store_true',
                     help='Skip saving to db.')
     args = ap.parse_args()
     main(args)
