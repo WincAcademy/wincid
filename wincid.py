@@ -1,6 +1,6 @@
 import json
 from argparse import ArgumentParser
-from random import randint
+import random
 
 
 def main(args):
@@ -30,9 +30,9 @@ def gen_new_id(iddb):
 
 
 def gen_id(adjectives, nouns):
-    a = adjectives[randint(0, len(adjectives))]
-    n = nouns[randint(0, len(nouns))]
-    return f'{a}_{n}_{randint(0, 99)}'
+    a = random.choice(adjectives)
+    n = random.choice(nouns)
+    return f'{a}_{n}_{random.randint(0, 99)}'
 
 
 def get_iddb():
