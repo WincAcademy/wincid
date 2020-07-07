@@ -1,12 +1,19 @@
 import json
+from argparse import ArgumentParser
 from random import randint
 
 
-def main():
+def main(args):
     iddb = get_iddb()
+
     new_id = gen_new_id(iddb)
-    update_iddb(iddb, new_id)
-    print(new_id)
+    if args.interactive:
+        while input(f'Use \"{new_id}\"? [y/n]\n') != 'y':
+            new_id = gen_new_id(iddb)
+
+    if not args.no_save:
+        update_iddb(iddb, new_id)
+    print(new_id, end='')
 
 
 def gen_new_id(iddb):
@@ -23,8 +30,8 @@ def gen_new_id(iddb):
 
 
 def gen_id(adjectives, nouns):
-    a = adjectives[randint(0, 99)]
-    n = nouns[randint(0, 99)]
+    a = adjectives[randint(0, len(adjectives))]
+    n = nouns[randint(0, len(nouns))]
     return f'{a}-{n}-{randint(0, 99)}'
 
 
@@ -39,4 +46,10 @@ def update_iddb(iddb, new_id):
 
 
 if __name__ == '__main__':
-    main()
+    ap = ArgumentParser('Generate Winc IDs')
+    ap.add_argument('-i', '--interactive', action='store_true',
+                    help='Interactive mode')
+    ap.add_argument('-n', '--no-save', action='store_true',
+                    help='Skip saving to db.')
+    args = ap.parse_args()
+    main(args)
