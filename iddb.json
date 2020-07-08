@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "05b076ade4d747878fa925e16e07a2c4": {
+        "human_name": "print",
+        "superseded_by": ''
+    },
+    "499e67d5cb54448e93cee7465be2c866": {
+        "human_name": "calculate",
+        "superseded_by": ''
+    },
+    "63ce21059cf34d3d8ffef497ede7e317": {
+        "human_name": "comments",
+        "superseded_by": ''
+    },
+    "7152c06aa3ac4d5f964ca8619ecb7e8f": {
+        "human_name": "variables",
+        "superseded_by": ''
+    },
+    "71dd124b4a6e4d268f5973db521394ee": {
+        "human_name": "strings",
+        "superseded_by": ''
+    },
+    "62311a1767294e058dc13c953e8690a4": {
+        "human_name": "casting",
+        "superseded_by": ''
+    }
+}
