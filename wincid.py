@@ -1,5 +1,4 @@
 import json
-import random
 import subprocess
 import sys
 from argparse import ArgumentParser
