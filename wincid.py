@@ -14,7 +14,7 @@ def main(args):
 
     if args.update:
         try:
-            iddb[args.update]['deprecated'] = new_id
+            iddb[args.update]['superseded_by'] = new_id
         except KeyError:
             sys.stderr.write(f"Error: '{args.update}' does not exist in iddb. "
                              + 'Exiting without writing anything.\n')
@@ -23,7 +23,7 @@ def main(args):
     iddb[new_id] = {
         'human_name': args.human_name,
         'created': dt.now().isoformat(),
-        'deprecated': False,
+        'superseded_by': '',
     }
     iddb['version'] += 1
 
