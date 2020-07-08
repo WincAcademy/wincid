@@ -1,20 +1,26 @@
 {
     "05b076ade4d747878fa925e16e07a2c4": {
-        "human_name": "print"
+        "human_name": "print",
+        "deprecated": false
     },
     "499e67d5cb54448e93cee7465be2c866": {
-        "human_name": "calculate"
+        "human_name": "calculate",
+        "deprecated": false
     },
     "63ce21059cf34d3d8ffef497ede7e317": {
-        "human_name": "comments"
+        "human_name": "comments",
+        "deprecated": false
     },
     "7152c06aa3ac4d5f964ca8619ecb7e8f": {
-        "human_name": "variables"
+        "human_name": "variables",
+        "deprecated": false
     },
     "71dd124b4a6e4d268f5973db521394ee": {
-        "human_name": "strings"
+        "human_name": "strings",
+        "deprecated": false
     },
     "62311a1767294e058dc13c953e8690a4": {
-        "human_name": "casting"
+        "human_name": "casting",
+        "deprecated": false
     }
 }
