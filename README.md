@@ -15,7 +15,9 @@ conflicts, although they are unlikely to occur in normal use.
 To deprecate an existing item, add the `--update`-option with the Winc ID of
 the item to deprecate.
 
-To read `iddb.json`, use `grep` or `jq`.
+* To read `iddb.json`, use `grep` or `jq`.
+* If you must manually edit `iddb.json`, don't forget to increment the value
+  for `revision`.
 
 ## Usage
 

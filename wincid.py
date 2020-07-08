@@ -25,6 +25,7 @@ def main(args):
         'created': dt.now().isoformat(),
         'deprecated': False,
     }
+    iddb['version'] += 1
 
     if args.dry_run:
         print('DRY RUN')
