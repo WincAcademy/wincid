@@ -1,5 +1,5 @@
 {
-    "version": 9,
+    "version": 10,
     "05b076ade4d747878fa925e16e07a2c4": {
         "human_name": "print",
         "superseded_by": ""
@@ -57,6 +57,11 @@
     "78029e0e504a49e5b16482a7a23af58c": {
         "human_name": "modules",
         "created": "2020-08-20T10:52:54.426689",
+        "superseded_by": ""
+    },
+    "04da020dedb24d42adf41382a231b1ed": {
+        "human_name": "classes",
+        "created": "2020-08-21T14:29:07.231209",
         "superseded_by": ""
     }
 }
