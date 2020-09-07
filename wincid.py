@@ -43,8 +43,9 @@ def update_iddb(iddb_path, iddb):
     try:
         subprocess.run(['git', 'add', iddb_path], check=True)
         subprocess.run(
-            ['git', 'commit', '-m', '"Auto-update iddb"'], check=True)
-        subprocess.run(['git', 'push'], check=True)
+            ['git', 'commit', '-m', '"Auto-update iddb"', '--quiet'],
+            check=True)
+        subprocess.run(['git', 'push', '--quiet'], check=True)
     except subprocess.CalledProcessError:
         sys.stderr.write('Error: git add/commit/push steps failed; '
                          + 'iddb was written but not pushed to GitHub\n')
