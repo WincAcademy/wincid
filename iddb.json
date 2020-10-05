@@ -1,5 +1,5 @@
 {
-    "version": 18,
+    "version": 19,
     "05b076ade4d747878fa925e16e07a2c4": {
         "human_name": "print",
         "superseded_by": ""
@@ -102,6 +102,11 @@
     "49bce82ef9cc475ca3146ee15b0259d0": {
         "human_name": "functions",
         "created": "2020-09-14T13:11:36.941657",
+        "superseded_by": ""
+    },
+    "a2bc36ea784242e4989deb157d527ba0": {
+        "human_name": "python",
+        "created": "2020-10-05T18:41:00.787430",
         "superseded_by": ""
     }
 }
