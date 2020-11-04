@@ -1,5 +1,5 @@
 {
-    "version": 19,
+    "version": 20,
     "05b076ade4d747878fa925e16e07a2c4": {
         "human_name": "print",
         "superseded_by": ""
@@ -107,6 +107,11 @@
     "a2bc36ea784242e4989deb157d527ba0": {
         "human_name": "superpy",
         "created": "2020-10-05T18:41:00.787430",
+        "superseded_by": ""
+    },
+    "8c2e6882503c4baa9ce2e050497c3f2f": {
+        "human_name": "stds",
+        "created": "2020-11-04T15:45:00.733022",
         "superseded_by": ""
     }
 }
