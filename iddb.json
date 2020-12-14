@@ -1,5 +1,5 @@
 {
-    "version": 22,
+    "version": 23,
     "05b076ade4d747878fa925e16e07a2c4": {
         "human_name": "print",
         "superseded_by": ""
@@ -122,6 +122,11 @@
     "d7b474e9b3a54d23bca54879a4f1855b": {
         "human_name": "betsy-webshop",
         "created": "2020-11-30T20:48:50.792584",
+        "superseded_by": ""
+    },
+    "534d85ea1ab14924a91f9eccf6f3f30d": {
+        "human_name": "errors",
+        "created": "2020-12-14T14:35:50.747678",
         "superseded_by": ""
     }
 }
